@@ -3,206 +3,244 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DCIT 26 Laboratory</title>
+    <meta
+      name="description"
+      content="Modern portfolio website for a student developer built as required by the DCIT 26 laboratory assignment."
+    />
+    <title>My Portfolio | DCIT 26</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="screen">
-      <div class="phone">
-        <div class="statusbar">
-          <div class="time">11:02 AM</div>
-          <div class="icons">
-            <span class="icon signal">◔</span>
-            <span class="icon wifi">◍</span>
-            <span class="icon battery">▣</span>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand">N<span>.</span></a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="theme-btn" type="button" aria-label="Toggle theme">☀️</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello, I’m</p>
+            <h1>Nhicos <span>Gonzales</span></h1>
+            <p class="tagline">Frontend Developer & UI/UX Enthusiast</p>
+            <p class="lead">
+              I build responsive, user-friendly web experiences that turn ideas into functional,
+              memorable digital products.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            </div>
+
+            <ul class="mini-stats" aria-label="Professional stats">
+              <li><strong>2+</strong><span>Years Learning</span></li>
+              <li><strong>8+</strong><span>Projects</span></li>
+              <li><strong>100%</strong><span>Passion</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Profile visual">
+            <div class="avatar-card">
+              <div class="avatar-glow"></div>
+              <div class="profile-circle">
+                <span>NG</span>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <header class="topbar">
-          <button class="back" aria-label="Back">←</button>
-          <div class="title-wrap">
-            <h1>DCIT 26 Laborat...</h1>
-          </div>
-          <div class="toolbar-icons" aria-label="Actions">
-            <span class="tool-icon list">▤</span>
-            <span class="tool-icon search">⌕</span>
-            <span class="tool-icon more">⋮</span>
-          </div>
-        </header>
-
-        <main class="paper-shell">
-          <div class="doc">
-            <div class="doc-header">
-              <div class="doc-brand">
-                <div class="brand-left">
-                  <div class="crest">
-                    <span>C</span>
-                  </div>
-                  <div class="brand-copy">
-                    <div class="brand-title">Cavite State University</div>
-                    <div class="brand-sub">Tanza Campus</div>
-                  </div>
-                </div>
-              </div>
-              <div class="brand-right">
-                <div class="brand-title right">Cavite State University</div>
-                <div class="brand-sub right">Tanza Campus</div>
-              </div>
-            </div>
-
-            <div class="doc-main">
-              <div class="dept-title">DEPARTMENT OF INFORMATION TECHNOLOGY</div>
-              <div class="subject-title">DCIT 26: APPLICATION DEVELOPMENT AND EMERGING TECHNOLOGIES</div>
-
-              <div class="form-row form-inline">
-                <div class="field name"><span>Name:</span> <div class="line"></div></div>
-                <div class="field score"><span>Score:</span> <div class="line short"></div></div>
-              </div>
-
-              <div class="form-row form-inline second">
-                <div class="field course"><span>Course &amp; Section:</span> <div class="line"></div></div>
-                <div class="field date"><span>Date:</span> <div class="line short"></div></div>
-              </div>
-
-              <div class="expect">
-                <div class="label">Expected Output:</div>
-                <p>
-                  A fully functional and deployable website developed using ReactJS and Tailwind CSS showing that the student created a structured and reusable ReactJS application. Appiled Tailwind CSS for layout, design, and responsive web design. It must be logically structured and used to present a well-designed webpage or website project.
-                </p>
-              </div>
-
-              <div class="instructions">
-                <div class="label">Instructions:</div>
-                <ol>
-                  <li>
-                    <span>Website Development</span>
-                    <ul>
-                      <li>Create a webpage that is responsive and accessible.</li>
-                      <li>Use a clear layout with strong visual hierarchy.</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span>Required Sections</span>
-                    <ul class="toggle-list">
-                      <li><span class="checkbox"></span> Your portfolio</li>
-                      <li><span class="checkbox"></span> Home</li>
-                      <li><span class="checkbox"></span> About Me</li>
-                      <li><span class="checkbox"></span> Personal background</li>
-                      <li><span class="checkbox"></span> Skills and interests</li>
-                      <li><span class="checkbox"></span> Projects</li>
-                      <li><span class="checkbox"></span> Contact Information</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span>ReactJS Features</span>
-                    <ul>
-                      <li>Implement at least three interactive features using ReactJS.</li>
-                      <li>Use state management for dynamic behavior and interactivity.</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span>Deployment</span>
-                    <ul>
-                      <li>Deploy the completed ReactJS project to Vercel.</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span>Testing</span>
-                    <ul>
-                      <li>Test the website thoroughly and ensure it works on mobile and desktop.</li>
-                    </ul>
-                  </li>
-                </ol>
-              </div>
-
-              <div class="footnote">
-                <div class="left">
-                  <span>Modern Laboratory - First Semester, SY 2026-2027</span>
-                  <span>DCIT 26: Application Development and Emerging Technologies</span>
-                </div>
-                <div class="page-num">1</div>
-              </div>
-            </div>
+      <section id="about" class="about section">
+        <div class="container about-grid">
+          <div class="section-heading">
+            <p class="eyebrow accent">About Me</p>
+            <h2>Designing simple experiences with strong purpose.</h2>
           </div>
 
-          <div class="doc doc-two">
-            <div class="doc-main">
-              <div class="section-list">
-                <ol start="3">
-                  <li>
-                    <span>ReactJS Features</span>
-                    <ul>
-                      <li>Implement at least three interactive features using ReactJS.</li>
-                      <li>Use state management for dynamic behavior and interactivity.</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span>Deployment</span>
-                    <ul>
-                      <li>Deploy the completed ReactJS portfolio website using Vercel.</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span>Testing</span>
-                    <ul>
-                      <li>Check responsiveness across desktops, tablets, and mobile screens.</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span>Demonstration</span>
-                    <ul>
-                      <li>Present the final application and explain project features.</li>
-                    </ul>
-                  </li>
-                </ol>
-              </div>
+          <div class="about-content">
+            <p>
+              I am a student developer passionate about creating modern web interfaces that are both
+              visually appealing and highly functional. I enjoy learning new technologies, improving my
+              problem-solving skills, and transforming ideas into responsive user experiences.
+            </p>
+            <p>
+              My goal is to keep growing as a developer by combining clean design, responsive layouts,
+              and meaningful interaction that help users accomplish their goals efficiently.
+            </p>
+          </div>
+        </div>
+      </section>
 
-              <div class="notes">
-                <div class="label">Notes:</div>
-                <ul>
-                  <li>All submissions must be hosted using GitHub Pages, Vercel, or Netlify.</li>
-                  <li>Only working public websites will be accepted.</li>
-                  <li>The UI should be clean, responsive, and user-friendly.</li>
-                  <li>Do not use copyrighted imagery or unnecessary heavy assets.</li>
-                </ul>
-              </div>
+      <section id="skills" class="skills section">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow accent">Skills &amp; Interests</p>
+            <h2>Tools and strengths I bring to each project.</h2>
+          </div>
 
-              <div class="rubric-box">
-                <div class="rubric-header">Grading Rubrics:</div>
-                <table>
-                  <tr>
-                    <th>Criteria</th>
-                    <th>Score</th>
-                  </tr>
-                  <tr>
-                    <td>Delivery (10 pts)</td>
-                    <td>10</td>
-                  </tr>
-                  <tr>
-                    <td>Structure &amp; Content (30 pts)</td>
-                    <td>30</td>
-                  </tr>
-                  <tr>
-                    <td>Design &amp; Responsiveness (30 pts)</td>
-                    <td>30</td>
-                  </tr>
-                  <tr>
-                    <td>ReactJS &amp; Interactivity (30 pts)</td>
-                    <td>30</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
+          <div class="skill-grid">
+            <article class="skill-card">
+              <div class="icon-box">HTML</div>
+              <h3>Structure</h3>
+              <p>Building semantic, accessible, and well-organized page layouts.</p>
+            </article>
 
-            <div class="page-mark">
-              <div class="floating-logo">V</div>
+            <article class="skill-card">
+              <div class="icon-box">CSS</div>
+              <h3>Styling</h3>
+              <p>Crafting polished interfaces with responsive design and modern visual systems.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="icon-box">JS</div>
+              <h3>Interaction</h3>
+              <p>Adding smooth transitions, filters, and dynamic user experiences.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="icon-box">UI</div>
+              <h3>UX Design</h3>
+              <p>Designing flows that balance clarity, usability, and aesthetic quality.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="icon-box">⚡</div>
+              <h3>Learning</h3>
+              <p>Continuously exploring new frameworks, tools, and creative approaches.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="icon-box">🎨</div>
+              <h3>Interests</h3>
+              <p>UI/UX, web aesthetics, digital experiences, and creative problem solving.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects section">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow accent">Projects</p>
+            <h2>Recent work that reflects my development skills.</h2>
+          </div>
+
+          <div class="filter-row" aria-label="Project filters">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="web">Web</button>
+            <button class="filter-btn" type="button" data-filter="design">Design</button>
+            <button class="filter-btn" type="button" data-filter="apps">Apps</button>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card" data-category="web">
+              <div class="project-header">
+                <span class="badge">Web</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3>Portfolio Landing Page</h3>
+              <p>
+                A personal portfolio website with an elegant landing page, smooth navigation, and clean
+                responsive sections.
+              </p>
+              <a href="#contact">View Details</a>
+            </article>
+
+            <article class="project-card" data-category="design">
+              <div class="project-header">
+                <span class="badge">Design</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3>Brand Mockup</h3>
+              <p>
+                A visual brand concept designed to explore user interface consistency, typography, and color
+                harmony.
+              </p>
+              <a href="#contact">View Details</a>
+            </article>
+
+            <article class="project-card" data-category="apps">
+              <div class="project-header">
+                <span class="badge">Apps</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3>Task Tracker</h3>
+              <p>
+                A small productivity application focused on task management, simple interactions, and clear user
+                feedback.
+              </p>
+              <a href="#contact">View Details</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow accent">Contact</p>
+            <h2>Let’s build something meaningful together.</h2>
+            <p>
+              I’m open to collaborations, freelance projects, and learning opportunities. Don’t hesitate to reach out.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:nhicos.gonzales@example.com">nhicos.gonzales@example.com</a>
+              <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
           </div>
-        </main>
+
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea rows="4" placeholder="Tell me about your idea..."></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 Nhicos Gonzales</p>
+        <a href="#home">Back to top</a>
       </div>
-    </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
